@@ -3,3 +3,5 @@
 function sayHello(name){
     return 'Hello, '+name;
 }
+
+const sayHey = name => `Hello, ${name}`;
