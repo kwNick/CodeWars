@@ -3,3 +3,5 @@
 function stray(numbers) {
     return numbers[0] === numbers[1] ? numbers.find(x => x !== numbers[0]) : numbers[0] === numbers[2] ? numbers[1] : numbers[0];
   }
+
+  const stray = nums => nums.reduce((a, b) => a ^ b);
