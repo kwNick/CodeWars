@@ -2,3 +2,5 @@
 function noSpace(x){
     return x.replace(/\s/gi, "");
   }
+
+  // function noSpace(x){return x.split(' ').join('')}
