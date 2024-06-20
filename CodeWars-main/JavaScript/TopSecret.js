@@ -1,0 +1,9 @@
+function topSecret(str) {
+    return str.split("").map((c, i) => /[a-z]/i.test(c) ? String.fromCharCode((c.charCodeAt() > 96 && c.charCodeAt() < 100 || c.charCodeAt() > 64 && c.charCodeAt() < 68 ? c.charCodeAt() + 23 : c.charCodeAt() - 3)) : c).join('');
+}
+//question1: The top secret file number is...
+answer1 = "2765";
+//question2: Super agent's name is...
+answer2 = "WFVMqq";
+//question3: He stole the treasure is...
+answer3 = "Train tire";
