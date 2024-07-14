@@ -9,3 +9,9 @@ const sequenceSum = (begin, end, step) => {
     }
     return track;
 };
+const sequenceSum_recursion = (begin, end, step) => {
+    if (begin > end) {
+        return 0;
+    }
+    return begin + sequenceSum(begin + step, end, step);
+};
